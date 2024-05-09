@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.title("pagina2")
+st.title("Lectura Inteligente")
