@@ -54,15 +54,15 @@ if img_file_buffer is not None:
     # run the inference
     prediction = model.predict(data)
     print(prediction)
-    if prediction[0][0]>0.3:
+    if prediction[0][0]>0.6:
       st.header('Hola Mauricio')
       client1.publish("IMIA","{'gesto': 'Abre'}",qos=0, retain=False)
       time.sleep(0.2)
-    if prediction[0][1]>0.3:
+    if prediction[0][1]>0.6:
       st.header('Hola Santiago')
       client1.publish("IMIA","{'gesto': 'Cierra'}",qos=0, retain=False)
       time.sleep(0.2) 
-    if prediction[0][2]>0.3:
+    if prediction[0][2]>0.6:
       st.header('No es reconocible, vuelva a intentar')
       client1.publish("IMIA","{'gesto': 'Cierra'}",qos=0, retain=False)
       time.sleep(0.2)  
