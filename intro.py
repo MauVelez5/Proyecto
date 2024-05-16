@@ -34,7 +34,7 @@ data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 st.title("Inicio de sesión")
 
 img_file_buffer = st.camera_input("Toma una Foto")
-
+st.markdown("""<style>.stApp {background-color: #4e93fa;  /* Cambia este valor al color de fondo que desees */}</style>""",unsafe_allow_html=True)
 if img_file_buffer is not None:
     # To read image file buffer with OpenCV:
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
