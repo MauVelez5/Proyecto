@@ -1,6 +1,4 @@
 import streamlit as st
-
-st.title("Intro")
 import paho.mqtt.client as paho
 import time
 import json
