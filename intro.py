@@ -18,7 +18,7 @@ def on_message(client, userdata, message):
     message_received=str(message.payload.decode("utf-8"))
     st.write(message_received)
 
-        
+st.markdown("<h3 style='color: white; font-size: 18px;'> Estudiante EAFITENSE, este es un espacio de aprendizaje en el cual podrás encontrar información clave dentro de tus Pdf's muy fácil y rápido. ¡Explórala!</h3>", unsafe_allow_html=True)        
 
 
 broker="broker.mqttdashboard.com"
