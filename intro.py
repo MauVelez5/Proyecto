@@ -18,7 +18,7 @@ def on_message(client, userdata, message):
     message_received=str(message.payload.decode("utf-8"))
     st.write(message_received)
 
-st.markdown("<h3 style='color: white; font-size: 18px;'> Estudiante EAFITENSE, este es un espacio de aprendizaje en el cual podrás encontrar información clave dentro de tus Pdf's muy fácil y rápido. ¡Explórala!</h3>", unsafe_allow_html=True)        
+       
 
 
 broker="broker.mqttdashboard.com"
@@ -32,6 +32,7 @@ model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 st.title("Inicio de sesión")
+st.markdown("<h3 style='color: white; font-size: 18px;'> Estudiante EAFITENSE, este es un espacio donde podrás encontrar información clave dentro de tus Pdf's muy fácil y rápido, Lo que debes hacer es tan simple como utilizar tu camára para que podamos hacer un escaneo facial para darte el acceso a el servicio que queremos ofrecerte</h3>", unsafe_allow_html=True) 
 
 img_file_buffer = st.camera_input("Toma una Foto")
 st.markdown("""<style>.stApp {background-color: #4e93fa;  /* Cambia este valor al color de fondo que desees */}</style>""",unsafe_allow_html=True)
